@@ -1,0 +1,23 @@
+<div class="container">
+<div class="col-md-12">      
+  <h3 class="text-left" style="margin-top:50px;">
+      <span>
+        <i class="fa fa-hacker-news" aria-hidden="true"></i>
+      </span>
+      News List      
+  </h3>    
+</div>
+  <hr/>
+  <div class="row">    
+  <div *ngFor="let news of this.newsFeedCollection.newsItems" class="card col-md-3 mb-4 shadow-sm" style="padding:0">
+      <div class="card-header">
+          <h4 class="my-0 font-weight-normal">Id: {{news.Id}}</h4>
+      </div>
+      <div class="card-body">          
+          <div>                
+              <a [routerLink]="" class="text-muted" onclick="" (click)="handleNewsSelection(news)">See more details ...</a>              
+          </div>    
+      </div>      
+  <div>
+  </div>
+</div>

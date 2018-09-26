@@ -1,0 +1,7 @@
+{
+  "http://localhost:4200/NewsFeedAPI/api/*": {
+    "target": "http://localhost/",
+    "secure": false,
+    "pathRewrite": {"^/api" : ""}
+  }
+}
